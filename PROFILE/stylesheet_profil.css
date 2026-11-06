@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF8F0;
+    color: #4E342E;
+}
+
+header {
+    background-color: #8D5A44;
+    color: white;
+    padding: 15px 7%;
+    font-size: 13px;
+}
+
+nav {
+    background-color: #A65D57;
+    padding: 15px 7%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 18px;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #FCE8E6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.hero {
+    background: linear-gradient(110deg, #8D5A44, #A65D57);
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+.card, .content {
+    background-color: #FFFDF9;
+    padding: 18px;
+    border-radius: 7px;
+    border: 1px solid #E8C9C5;
+    margin-bottom: 18px;
+}
+
+h2 {
+    color: #8D5A44;
+    font-size: 19px;
+    border-bottom: 2px solid #C07878;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #A65D57;
+}
+
+p, li, td, th {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #8D5A44;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #C07878;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #FCE8E6;
+}
+
+.quick a {
+    display: block;
+    padding: 9px 0;
+    text-decoration: none;
+    color: #A65D57;
+    border-bottom: 1px solid #E8C9C5;
+    font-size: 13px;
+}
+
+.quick a:hover {
+    color: #8D5A44;
+}
+
+.button {
+    display: inline-block;
+    background-color: #A65D57;
+    color: white;
+    padding: 9px 14px;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background-color: #8D5A44;
+}
+
+footer {
+    background-color: #8D5A44;
+    color: white;
+    padding: 25px 7%;
+    margin-top: 35px;
+}
+
+footer a {
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .container {
+        width: 94%;
+    }
+}
